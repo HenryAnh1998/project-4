@@ -89,6 +89,13 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
     }
   }
 
+  // handleSearchNameChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const todos = await getTodos(this.props.auth.getIdToken())
+
+  //   this.setState({
+  //     todos: todos.filter(todo => todo.name.includes(event.target.value))
+  //   })
+  // }
   async componentDidMount() {
     try {
       const todos = await getTodos(this.props.auth.getIdToken())
@@ -107,15 +114,35 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         <Header as="h1">TODOs</Header>
 
         {this.renderCreateTodoInput()}
-
+        {/* {this.renderSearchTodoInput()} */}
         {this.renderTodos()}
       </div>
     )
   }
+  // renderSearchTodoInput() {
+  //   return (
+  //     <Grid.Row>
+  // <Grid.Column width={16}>
+  //         <Input
+  //           action={{
+  //             color: 'grap',
+  //             labelPosition: 'right',
+  //             icon: 'search',
+  //             content: 'Search'
+  //           }}
+  //           fluid
+  //           placeholder="Search ...."
+  //           onChange={this.handleSearchNameChange}
+  //         />
+  //       </Grid.Column>
+  //       </Grid.Row>
+  //       )
+  //     }
 
   renderCreateTodoInput() {
     return (
       <Grid.Row>
+      
         <Grid.Column width={16}>
           <Input
             action={{
