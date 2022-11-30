@@ -29,8 +29,8 @@ provider:
     #CONNECTIONS_TABLE: Connections-${self:provider.stage}
     ATTACHMENT_S3_BUCKET: serverless-c4-todo-images-982675634385-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
-    AUTH_0_SECRET_ID: qQ-LeTjEdxx5EuZU9_dQEdA4dqe4zeLxjYdrveajH8KZKaovlGFtw-HePuTWFvfn
-    AUTH_0_SECRET_FIELD: SXudh6OKHDG27c2di3k7YJYm4dfFx2ciqCP_F5XlgIguwJPZ6GL9a5oBFjybxs79
+    AUTH_0_SECRET_ID: CsP2MoMN5P6dn2z1U8bgHfzhv36SZK73
+    AUTH_0_SECRET_FIELD: jbp0ZPv-Uq5xxHCpAgW-P9aI3TJ00sFMoyJAwAWFn0Zt1eVonXxDFtwEiQRiEL4l
 
   logs:
     # Enable API Gateway logs
